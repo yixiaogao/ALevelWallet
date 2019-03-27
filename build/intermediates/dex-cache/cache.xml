@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<items version="2">
+
+
+-<item sha1="4486e953d1f35f8ccab098b1dd67146366d5f731" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\classes-d56ac614ba79f03919f33df7f17e7c5bdc1e3344.jar"/>
+
+</item>
+
+
+-<item sha1="f8efd0096475e0daf054267b61544e10dc776503" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\classes-a735d4eb0fbac5b74e4398cd2ed6a15b6994f14d.jar"/>
+
+</item>
+
+
+-<item sha1="c78174606a6ceda56f4dbe6bfa162c404c9b9bff" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\fastjson-1.1.33.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\fastjson-1.1.33-fd4d43571dafea014fdeb306a4b1ddf88c013fd8.jar"/>
+
+</item>
+
+
+-<item sha1="4553499249a43cac44faec812aa7003adec334e2" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\zbardecoder.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\zbardecoder-28a4bd01ac1904c1e44707794f5938d3b3a63c79.jar"/>
+
+</item>
+
+
++<item sha1="868c060abfa9778e598e631f93f94037edbe8996" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\BaiduLBS_Android.jar">
+
+
+-<item sha1="0428a14dde4b669b04acd6459a48cad855180521" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\rorate3d.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\rorate3d-39d27144dbfc669e2f277dd192c07751cb4906a6.jar"/>
+
+</item>
+
+
+-<item sha1="18f498680ca85f87b62a150e341d97e204b5ec30" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\msbase.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\msbase-576e534e8091ebba984be104c5d86cba5141fa86.jar"/>
+
+</item>
+
+
+-<item sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b" revision="23.0.0" jumboMode="false" jar="F:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-bbac7b4f3bc413c4c908d13b19b67465a3972d9a.jar"/>
+
+</item>
+
+
+-<item sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-0c4e4f26c27c21bb2c2f57153556c7e503fcd717.jar"/>
+
+</item>
+
+
+-<item sha1="8b3122b92cde137ea32f0dee843e730fe3f354e9" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\fastjson-1.1.33-sources.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\fastjson-1.1.33-sources-f454752fd414b708979f0adb929fd4c5d9c8c675.jar"/>
+
+</item>
+
+
+-<item sha1="10d96debb0a87d303bbed7d908c3a6f9a01b3307" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\SMSSDK-1.1.5.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\SMSSDK-1.1.5-cfdd448996ac26be95afe9f25fd76454ac80471a.jar"/>
+
+</item>
+
+
+-<item sha1="3ed6708bd8fec3e2ccf987c1f8ce26253805463e" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\msutil.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\msutil-5c2b109170a527488ff8181aa5ff1352eb3165d3.jar"/>
+
+</item>
+
+
+-<item sha1="02fd8c576467d8de04c5f5514070447394f2877f" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\Hanvon-SDK-Android-1.0.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\Hanvon-SDK-Android-1.0-38bad19e419b2a682a58823a13893fb0b4f8850d.jar"/>
+
+</item>
+
+
+-<item sha1="1d422fb3a0f795588eaaaa62765cf53c4e95549f" revision="23.0.0" jumboMode="false" jar="F:\StudioWorkplace\A_LevelWallet\app\libs\mssqlserver.jar">
+
+<dex dex="F:\StudioWorkplace\A_LevelWallet\app\build\intermediates\pre-dexed\debug\mssqlserver-98ab67f1f09b6f81bc3628fb625afc08a543791a.jar"/>
+
+</item>
+
+</items>
