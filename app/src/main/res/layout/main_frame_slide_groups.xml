@@ -1,0 +1,97 @@
+<com.theone.a_levelwallet.activity.mainFrame.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+  <include layout="@layout/main_frame_menu"/>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@drawable/pic_bg_main">
+
+    <RelativeLayout
+        android:id="@+id/rly_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_menu"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                >
+
+        <cy.rorate3d.view.CYRorateView
+            android:id="@+id/myView"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/rly_toolbar"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_enter_cardframe"
+            android:text="进 入"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_blue_selector"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"
+            />
+
+            </LinearLayout>
+
+            <include layout="@layout/main_frame_bottom" />
+
+        </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBar_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:max="255"
+        android:progress="127"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rly_brightness_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</com.theone.a_levelwallet.activity.mainFrame.SlidingLayout>

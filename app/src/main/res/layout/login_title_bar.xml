@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/purple">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_title_left"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_return"
+        />
+
+    </LinearLayout>
+
+    <View android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/prefresh_list_cutline"/>
+
+
+</LinearLayout>

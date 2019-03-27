@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic_bg_clear">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="绑定手机"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@color/purple"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pic_bg_text">
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="输入新的手机号"
+            android:id="@+id/et_new_mobileNo"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="登录密码"
+            android:id="@+id/et_old_number_code"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="新号码验证码："
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/et_new_number_code"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

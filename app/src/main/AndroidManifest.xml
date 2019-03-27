@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theone.a_levelwallet">
+
+    <!-- 短信权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 短信权限 -->
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 百度地图所需权限 -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="b5SmehWsypHcwG8GPYWZFwr8" />
+
+        <activity
+            android:name=".activity.welcome.WelcomeActivity"
+            android:icon="@mipmap/icon"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.loginAndRegister.LoginActivity" />
+        <activity android:name=".activity.loginAndRegister.RegisterConfirmActivity" />
+        <activity android:name=".activity.welcome.PicturesForWelcome" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".activity.loginAndRegister.RegisterFinish" />
+        <activity android:name=".activity.loginAndRegister.RegisterPsdConfirm" />
+        <activity android:name=".activity.bankCardFrame.BankCardMainFrameActivity" />
+        <activity android:name=".activity.businessCardFrame.BusinessCardMainFrameActivity" />
+        <activity android:name=".activity.mainFrame.MainFrame" />
+        <activity android:name=".activity.mainFrame.ZxingScan.CaptureActivity" />
+        <activity android:name=".activity.lockPatten.locus.LocusMainActivity" />
+        <activity android:name=".activity.lockPatten.locus.SetPasswordActivity" />
+        <activity android:name=".activity.accountSetting.AccountInfoActivity" />
+        <activity android:name=".activity.IdCardFrame.MainActivity" />
+        <activity android:name=".activity.IdCardFrame.RecognizeActivity" />
+        <activity android:name=".activity.bankCardFrame.CashTaking" />
+        <activity android:name=".activity.mainFrame.SearchActivity" />
+        <activity
+            android:name=".activity.bankCardFrame.PoiSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.businessCardFrame.BSCardRGActivity" />
+        <activity android:name=".activity.IdCardFrame.IDCardInfoActivity" />
+        <activity android:name=".activity.bankCardFrame.addBankCard.AddBankCardActivity" />
+        <activity android:name=".activity.bankCardFrame.addBankCard.BankCardInfoActivity" />
+        <activity android:name=".activity.bankCardFrame.addBankCard.BankCardConfirm" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".activity.mainFrame.ZxingScan.ScanResultActivity"
+            android:label="@string/title_activity_scan_result"></activity>
+        <activity
+            android:name=".activity.IdCardFrame.ShowIDCardPhotoActivity"
+            android:label="@string/title_activity_show_idcard_photo"></activity>
+        <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.IdCardFrame.MyQRCordActivity"
+            android:label="@string/title_activity_my_qrcord"></activity>
+    </application>
+
+</manifest>

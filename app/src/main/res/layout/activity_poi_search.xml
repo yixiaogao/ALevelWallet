@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic_bg_clear">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:background="@drawable/pic_bg_text">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray_a"
+           android:textSize="19sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="天津"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市内找"
+            android:textColor="@color/gray_a"
+            android:textSize="19sp">
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88"
+            android:text="银行"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bt_blue_selector"
+            android:onClick="searchButtonProcess"
+            android:padding="10dip"
+            android:text="开始"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/map_next_data"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_blue_selector"
+            android:onClick="goToNextPage"
+            android:padding="10dip"
+            android:textColor="@color/white"
+            android:text="下一组数据" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        class="com.baidu.mapapi.map.SupportMapFragment" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bt_blue_selector"
+        android:id="@+id/btn_address_confirm"/>
+</RelativeLayout>
+
+
+</LinearLayout>

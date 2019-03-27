@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theone.a_levelwallet.activity.mainFrame.SearchActivity"
+    android:background="@drawable/pic_bg_clear"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/purple"
+            android:text="搜索"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardnum"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/search_card"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/search"
+        android:id="@+id/btn_search"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:text="查询结果显示"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:id="@+id/tv_result"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="导出"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bt_blue_selector"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

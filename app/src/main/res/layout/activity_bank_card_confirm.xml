@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pic_bg_clear"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:background="@drawable/top_return" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="填写验证码       "
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/pic_bg_text">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="验证码"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/et_bank_codeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:background="@null"
+            android:hint="请输入收到的验证码"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_a" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_blue_selector"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

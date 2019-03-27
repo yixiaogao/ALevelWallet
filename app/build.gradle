@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.0'
+
+    defaultConfig {
+        applicationId "com.theone.a_levelwallet"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/msbase.jar')
+    compile files('libs/mssqlserver.jar')
+    compile files('libs/msutil.jar')
+    compile files('libs/rorate3d.jar')
+    compile files('libs/dexedLibs/annotations-62c6a9ddc1705a553768e4c455616057.jar')
+    compile files('libs/dexedLibs/annotations-92ad30b10040ec7f90459dad0ef04813.jar')
+    compile files('libs/core.jar')
+    compile files('libs/zbardecoder.jar')
+    compile files('libs/fastjson-1.1.33.jar')
+    compile files('libs/fastjson-1.1.33-sources.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/Hanvon-SDK-Android-1.0.jar')
+    compile files('libs/SMSSDK-1.1.5.jar')
+}

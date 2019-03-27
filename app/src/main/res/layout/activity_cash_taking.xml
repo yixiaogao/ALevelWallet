@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical"
+    android:background="@drawable/pic_bg_clear">
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:text="预约取现"
+       android:textSize="22sp"
+       android:gravity="center_horizontal|center_vertical"
+       android:textColor="@color/white"
+       android:background="@color/purple"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/s_cardNo"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_blue_selector">
+       </Spinner>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="预约取现金额（100的整数倍）"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="number"
+            android:id="@+id/et_cashNum"
+            android:textColorHint="@color/gray_a"
+            android:background="@drawable/edit_input"
+            android:textColor="@color/gray_a"
+         />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="取现就近地址"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="19sp"
+            android:id="@+id/tv_address"
+            android:background="@drawable/edit_input"
+            android:textColor="@color/gray_b"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/adddress_search"
+                android:id="@+id/btn_address_search"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" 为了安全起见，银行规定单次金额预取量不超过2000元，当日限定取额次数为3次，累月取额不能超过15000元."
+            android:layout_marginTop="20dp"
+            android:textColor="@color/red"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/s_timeLimit"
+            android:background="@drawable/bt_blue_selector">
+        </Spinner>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_blue_selector"
+            android:id="@+id/btn_confirmInfo"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pic_bg_text"
+            >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dyPsd"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

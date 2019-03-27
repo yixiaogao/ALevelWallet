@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp">
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/Ibtn_addWalletPage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_add"
+        />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/Ibtn_deletePage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_del"
+        />
+
+
+
+</RelativeLayout>

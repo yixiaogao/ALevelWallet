@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.theone.a_levelwallet.activity.bankCardFrame.addBankCard.AddBankCardActivity"
+    android:background="@drawable/pic_bg_clear"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple"
+        >
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:background="@drawable/top_return"
+            android:id="@+id/btn_return"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="添加银行卡       "
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:gravity="center_horizontal|center_vertical" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/pic_bg_text">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:text="卡号："
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/et_bankCardNumber"
+            android:textColorHint="@color/gray_a"
+            android:hint="输入卡号"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="照相机 "
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_register_selector"
+            android:id="@+id/btn_camera"/>
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="为了保障资金安全，请务必添加账户本人开户的银行卡"
+        android:textSize="20sp"
+        android:textColor="@color/gray_a" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bt_blue_selector"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_next"/>
+
+</LinearLayout>
